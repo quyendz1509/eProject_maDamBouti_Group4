@@ -9,7 +9,13 @@ function getParamer(param=''){
   let paramer = url.searchParams.get(param);
   return paramer;
 }
+  // loading loading
+  const loading = $('#loading-web');
+ $(window).on('load', function () {
 
+   loading.css('display', 'none');
+  
+ });
 
 $(document).ready(function () {
 
@@ -75,11 +81,8 @@ $('#contact').submit(function(event) {
   })
 }
 });
-  // loading loading
-  const loading = $('#loading-web');
-  setTimeout( function(){
-   loading.css('display', 'none');
- },1200 )
+
+ 
   AOS.init();
 
   var swiper = new Swiper(".bannerSwiper",
