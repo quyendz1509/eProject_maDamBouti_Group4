@@ -1,5 +1,4 @@
 
-feather.replace()
 // AOS 
 
 // 
@@ -116,6 +115,7 @@ $('#footer-cate').html(noidungfooter);
   .fail(function() {
     alert("Không thể kết nối tới server");
   });
+feather.replace();
 });
   // check scroll
   let lastScrollTop = 10;
