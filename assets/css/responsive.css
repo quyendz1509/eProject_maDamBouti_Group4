@@ -64,10 +64,10 @@
 @media only screen and (max-width: 425px) {
 
     .banner .banner-content{
-        top: 55%;
+        top: 60%;
     }
     .banner{
-        min-height: 280px;
+        min-height: 300px;
     }
     .navbar-brand{
         max-width: 160px;
