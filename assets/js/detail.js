@@ -86,6 +86,12 @@ $(document).ready(function() {
         })
         .done(function(res) {
             addToCart(res,parseInt(quanty),__cart,_amount_cart,size);
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: `Add ${parseInt(quanty)} successful product to cart `,
+                showConfirmButton: false,
+            })
         })
 
         .fail(function() {

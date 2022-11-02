@@ -68,6 +68,12 @@
 		})
 		.done(function(res) {
 			addToCart(res,1,__cart,_amount_cart);
+			Swal.fire({
+				position: 'center',
+				icon: 'success',
+				title: `Add 1 successful product to cart `,
+				showConfirmButton: false,
+			})
 		})
 
 		.fail(function() {
